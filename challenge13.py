@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 
-print("what is your name? ")
 
-name = input("enter your name: ")
+def main():
 
-print("what day of the week is it?: ")
+    print("what is your name? ")
 
-day = input("enter the day of the week: ")
+    name = input("enter your name: ")
+
+    print("what day of the week is it?: ")
+
+    day = input("enter the day of the week: ")
 
 
 # You should choose either the , or the +
@@ -17,6 +20,7 @@ day = input("enter the day of the week: ")
 # We can use + to concatenate it meaning it's just crammed right against the string before
 
 
-print("Hello," + name + "!  " + "Happy " + day + "!")
+    print("Hello," + name + "!  " + "Happy " + day + "!")
 
+main()
 # These are tricky.  Hopefully, that works.
