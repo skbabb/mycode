@@ -84,8 +84,10 @@ def decide_meal():
         # create object named choice to equal a function
         choice = input("Enter the number of your choice (1-3): ")
 
-        if choice == "1":
-            return "steak"
+        if choice == "0":
+            return "choose 1-3"
+        elif choice == "1":
+            return "steak"    
         elif choice == "2":
             return "chicken"
         elif choice == "3":
@@ -106,7 +108,7 @@ def main():
 
 filename = "shopping_list.txt"
 with open(filename, "w") as file:
-    file.write("Grocery List for " + meal_choice + ":\n")
+    file.write("grocery List for " + meal_choice + ":\n")
     for item in grocery_list:
         store_choice = input("Type Costco or Kroger: ").lower()
         if store_choice == "costco":
